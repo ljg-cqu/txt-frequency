@@ -1,4 +1,4 @@
-module github.com/ljg-cqu/txt-purifier
+module github.com/ljg-cqu/txt-frequency
 
 go 1.19
 
