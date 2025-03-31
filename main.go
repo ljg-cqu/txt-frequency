@@ -68,7 +68,7 @@ func main() {
 	// Regex patterns
 	chineseCharacterRegex := `[\p{Han}]`                         // Matches individual Chinese characters
 	chineseWordsRegex := `[\p{Han}]+`                            // Matches sequences of Chinese characters as words
-	englishWordRegex := `\b[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)?\b`     // Matches English words and compounds like "micro-video"
+	englishWordRegex := `\b[a-zA-Z0-9']+(?:-[a-zA-Z0-9']+)?\b`   // Matches English words and compounds like "micro-video", also handle "I'll"
 	englishPhrasesRegex := `\b[a-zA-Z0-9][\w\s'-]*[a-zA-Z0-9]\b` // Matches English phrases with spaces
 
 	// Frequency maps
